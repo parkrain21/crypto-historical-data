@@ -16,14 +16,25 @@ Collection of python test scripts to generate historical data
       - getPriceData --> Main generating function of this script, saves the output on a CSV file
       - get_top_coins --> Fetches the top n pairs sorted by 24H trading volume. 
 
-  `Usage`
-  
+  `Usage 1` - To generate a specific ticker/pair
+    
   ```python
   from pricegen import *
   
   client = init()
   
-  top_coins = get_top_coins(5)    # parameter works like the pandas head() function.
+  getPriceData('BTCUSDT', '1d', '1 year ago')
+  ```
+  
+  
+  `Usage 2` - To generate the top n coins, sorted by 24H volume
+  ```python
+  from pricegen import *
+  
+  client = init()
+  
+  # parameter works like the pandas head() function.
+  top_coins = get_top_coins(5)    
   top_coins_tickers = top_coins.symbol.to_list()
   
   # Loop through the top tickers and generate one year worth of daily candles in a CSV format.

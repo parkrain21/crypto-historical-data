@@ -18,7 +18,7 @@ def getPriceData(pair, interval, window, sf='SPOT') -> pd.DataFrame:
     """ 
     Fetches the historical candlestick data using the specified pair, interval, and lookback period.
     
-    :param str|list|tuple pair: Asset ticker/pair (e.g. BTCUSDT, ETHUSDT, etc.)
+    :param str pair: Asset ticker/pair (e.g. BTCUSDT, ETHUSDT, etc.)
     :param str interval: timeframe used for the query (eg. 1m, 3m, 1h, 1d, etc.)
     :param str window: date range (e.g 3 days ago, 1 year ago, etc.)
     :return dataframe: time-indexed OHLCV dataframe

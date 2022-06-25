@@ -1,7 +1,7 @@
 # crypto-historical-data
 Collection of python test scripts to generate historical data
 
-'NOTE': Create a auth_keys.py file containing the API_KEY and API_SECRET variables. Get this from the Binance site.
+`NOTE`: Create a auth_keys.py file containing the API_KEY and API_SECRET variables. Get this from the Binance site.
 
 **hist_prices_to_csv.py**
   1. Follow the prompts on the terminal.
@@ -16,7 +16,7 @@ Collection of python test scripts to generate historical data
       - getPriceData --> Main generating function of this script, saves the output on a CSV file
       - get_top_coins --> Fetches the top n pairs sorted by 24H trading volume. 
 
-  'Usage'
+  `Usage`
   
   ```python
   from pricegen import *

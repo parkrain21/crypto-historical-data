@@ -11,8 +11,8 @@ Collection of python test scripts to generate historical data
   1. This is a websocket based kline generator. You can edit the interval and the pair in line 5.
   2. Crypto data is printed on the terminal every second
 
-**pricegen.py**
-  This script contains the following functions:
+**pricegen.py** --> USE THIS!
+  1. This script contains the following functions:
       - getPriceData --> Main generating function of this script, saves the output on a CSV file
       - get_top_coins --> Fetches the top n pairs sorted by 24H trading volume. 
 
